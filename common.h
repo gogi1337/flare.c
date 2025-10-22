@@ -1,3 +1,5 @@
+#pragma once
+
 #define MAX_ROUTES 100
 #define MAX_BUFFER 8192
 #define MAX_HEADER_SIZE 4096
