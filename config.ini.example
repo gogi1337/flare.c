@@ -1,0 +1,20 @@
+# Flare Reverse Proxy Configuration
+
+addr = 0.0.0.0:80
+disable_domain_not_configured_warns = false
+disable_failed_to_reach_warns = false
+
+# Route 1
+[route]
+route = example.com
+forward = http://127.0.0.1:8080
+
+# Route 2
+[route]
+route = api.example.com
+forward = http://127.0.0.1:3000
+
+# Route 3
+[route]
+route = blog.example.com
+forward = http://127.0.0.1:8081
